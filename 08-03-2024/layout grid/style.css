@@ -1,0 +1,27 @@
+.container {
+    width: 100%;
+    /* border: 2px solid rgb(212, 0, 255); */
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.grid-container {
+    display:grid;
+    grid-template-columns: minmax(300px 3fr); 
+    column-gap: 10px;
+    row-gap: 10px;
+} 
+
+.nav {
+    background-color: antiquewhite;
+    border: 2px solid red;
+    
+}
+.menuLateral {
+    background-color: antiquewhite;
+    border: 2px solid red;
+}
+.grid {
+    background-color: antiquewhite;
+    border: 2px solid red;
+}
