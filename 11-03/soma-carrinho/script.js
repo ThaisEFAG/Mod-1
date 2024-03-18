@@ -1,5 +1,6 @@
 
 let select = document.getElementById("choice-product");
+
 let array = [];
 
 function addCar(){
@@ -13,8 +14,8 @@ function addCar(){
 }
 
 let showItens = document.querySelector('.show-Itens')
-
-select.addEventListener('change', function(){
+   
+    select.addEventListener('change', function(){
     var index = select.selectedIndex;
     var textoIndex = select.options[index].text;
     var para = document.createElement('p');
