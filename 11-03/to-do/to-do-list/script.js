@@ -63,9 +63,13 @@ function additen() {
         return buttons;
     });
     trList.append(...buttonsDes);
-    
-}
-
+    let localDataPresent = localStorage.getItem("keyTesk");
+    if(localDataPresent !== null) {
+        trList = JASON.parse(localDataPresent);
+        
+    }
+    //local-storage precisa de dois parâmetros (chave, valor)
+    localStorage.setItem("keyTask", JASON.stringify(trList));
 
 //lógica do check somente para tdList
  function setCheck(btn){
